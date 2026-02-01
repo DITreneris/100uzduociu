@@ -4,6 +4,16 @@
 
 Praktinių promptų rinkinys, skirtas kasdieniam darbui su AI įrankiais (ChatGPT, Claude, Copilot). Kiekviena užduotis paruošta kopijuoti ir naudoti.
 
+## ✨ Funkcijos
+
+- 🎯 **Progress bar** - matote, kiek puslapio jau peržiūrėjote
+- 📋 **Toast pranešimai** - patvirtinimas po kopijavimo "Nukopijuota ✅"
+- ⬆️ **Back-to-top mygtukas** - greitai grįžkite į viršų
+- 🔍 **Search highlight** - paieška paryškina rastus žodžius
+- 📱 **Mobile bottom bar** - patogus Ieškoti/Skyriai baras mobiliems
+- ⌨️ **Keyboard shortcuts** - `/` paieška, `Esc` uždaryti
+- 🌙 **Dark mode** - automatiškai pagal sistemos nustatymus
+
 ## Greitas pradžia
 
 1. Atidarykite `index.html` naršyklėje
@@ -14,20 +24,17 @@ Praktinių promptų rinkinys, skirtas kasdieniam darbui su AI įrankiais (ChatGP
 
 ## Turinys
 
-110 praktinių užduočių, organizuotų pagal 10 skyrių:
+110 praktinių užduočių, organizuotų pagal 9 skyrius:
 
-- **Pradėti** - Populiariausios užduotys
-- **Pardavimai** - El. laiškai, pasiūlymai, klientų aptarnavimas
-- **Pirkimai** - Tiekėjų analizė, derybos, sutartys
-- **Logistika** - Atsargų valdymas, transportas, optimizavimas
-- **E-komercija** - Produktų aprašymai, SEO, kategorijos
-- **Dizainas** - Vizualus turinys, infografikos, šablonai
-- **Duomenų analizė** - Ataskaitos, vizualizacijos, KPI
-- **Rinkodara** - El. laiškai, socialinės medijos, turinys
-- **IT** - Dokumentacija, troubleshooting, code review
-- **Finansai** - Ataskaitos, analizė, biudžetai
-- **Produktyvumas** - Metodai, planavimas, organizavimas
-- **Pažengusiems** - Kompleksiški promptų šablonai
+- 🚀 **Pradėti** - Populiariausios užduotys (greitas startas)
+- 💼 **Verslas** - El. laiškai, pasiūlymai, klientų aptarnavimas
+- 🛒 **E-komercija** - Produktų aprašymai, SEO, kategorijos
+- 🎨 **Dizainas** - Vizualus turinys, infografikos, šablonai
+- 📊 **Duomenų analizė** - Ataskaitos, vizualizacijos, KPI
+- 📢 **Rinkodara** - El. laiškai, socialinės medijos, turinys
+- 👥 **Personalo skyrius** - Įdarbinimas, mokymai, vertinimas
+- ⚡ **Asmeninis efektyvumas** - Metodai, planavimas, organizavimas
+- 🚀 **Pažengusiems** - Kompleksiški promptų šablonai
 
 ## Kalbos
 
@@ -42,12 +49,21 @@ Praktinių promptų rinkinys, skirtas kasdieniam darbui su AI įrankiais (ChatGP
 4. Pakeiskite [laukus] savo duomenimis (pvz., `[produktas]`, `[klientas]`, `[kaina]`)
 5. Gaukite rezultatą
 
+### Klaviatūros spartieji klavišai (desktop)
+
+| Klavišas | Veiksmas |
+|----------|----------|
+| `/` | Fokusavimas į paiešką |
+| `Esc` | Uždaryti modal/meniu |
+
 ## GitHub Pages
 
 1. Sukurkite GitHub repository
 2. Įkelkite failus
 3. Settings → Pages → pasirinkite branch ir folder
 4. Svetainė bus prieinama per `https://[username].github.io/[repository-name]`
+
+Daugiau informacijos: [GITHUB_SETUP.md](GITHUB_SETUP.md)
 
 ## Technologijos
 
@@ -56,6 +72,9 @@ Praktinių promptų rinkinys, skirtas kasdieniam darbui su AI įrankiais (ChatGP
 - Accessibility (ARIA labels, keyboard navigation)
 - Dark mode support
 - Print styles
+- Progress indicator
+- Toast notifications
+- Mobile bottom bar
 
 ## Failų struktūra
 

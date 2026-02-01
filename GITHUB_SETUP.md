@@ -16,7 +16,11 @@
 
 1. Eikite į sukurtą repository
 2. Spustelėkite "uploading an existing file"
-3. Įkelkite failus: `index.html`, `README.md`, `.gitignore`
+3. Įkelkite failus:
+   - `index.html`
+   - `index_en.html`
+   - `README.md`
+   - `LICENSE`
 4. Įveskite commit žinutę ir spustelėkite "Commit changes"
 
 #### Per Git komandinę eilutę
@@ -58,12 +62,23 @@ git commit -m "Updated: [describe changes]"
 git push
 ```
 
-## Rekomenduojami failai
+## Rekomenduojami failai publikavimui
 
 ```
 .
-├── index.html
-├── README.md
-├── GITHUB_SETUP.md
-└── .gitignore
+├── index.html          # Pagrindinė svetainė (LT)
+├── index_en.html       # English version
+├── README.md           # Projekto aprašymas
+├── LICENSE             # MIT licencija
+└── .gitignore          # Git ignoravimo failas
 ```
+
+## Failai, kurių NEREIKIA įkelti
+
+Šie failai skirti tik kūrimui ir neturėtų būti įkelti į GitHub:
+
+- `index_old.html` - sena versija
+- `*.js` failai (build/migrate skriptai)
+- `migrated-prompts.html`
+- `*_IVERTINIMAS.md` failai
+- `01_concept.txt`

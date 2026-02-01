@@ -13,6 +13,19 @@ Desktop.ini
 KRITINIS_IVERTINIMAS.md
 UI_UX_IVERTINIMAS.md
 UI_UX_PATOBULINIMAI.md
+UX_PATOBULINIMAI_V2.md
+
+# Build/migration scripts
+build-final.js
+enhance-original.js
+migrate-prompts.js
+migrated-prompts.html
+
+# Old/backup versions
+index_old.html
+index-v2*.html
+index-v3*.html
+*-backup.html
 
 # Editor directories and files
 .vscode/
