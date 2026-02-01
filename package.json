@@ -1,0 +1,28 @@
+{
+  "name": "praktiniu-promptu-rinkinys",
+  "version": "3.0.0",
+  "description": "110 praktinių užduočių kasdieniam darbui su DI - P2 Enhanced",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 3000 --cors",
+    "start": "npx serve . -l 3000 --cors",
+    "lint": "eslint assets/js/*.js",
+    "format": "prettier --write assets/**/*.{js,css}"
+  },
+  "keywords": [
+    "prompts",
+    "AI",
+    "productivity",
+    "Lithuanian",
+    "fuzzy-search",
+    "favorites"
+  ],
+  "author": "Praktinių Promptų Komanda",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "serve": "^14.2.1"
+  },
+  "dependencies": {}
+}

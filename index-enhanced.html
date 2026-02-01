@@ -19,6 +19,9 @@
   
   <!-- External CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Fuse.js for Fuzzy Search (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
 </head>
 <body>
   <!-- Progress bar -->
@@ -192,6 +195,11 @@
           <p class="section__subtitle">Ieškokite pagal raktažodį arba naršykite pagal skyrių. Spustelėkite „Kopijuoti", kad užduotis būtų nukopijuota į iškarpinę.</p>
         </div>
 
+        <!-- User Stats Bar -->
+        <div class="user-stats-bar" id="user-stats-bar">
+          <span id="user-stats">📋 0 kopijos | ⭐ 0 mėgstami</span>
+        </div>
+
         <div class="search-box">
           <input 
             type="search" 
@@ -200,6 +208,28 @@
             placeholder="🔍 Ieškokite praktinių užduočių pagal raktažodį (pvz., el. laiškas, kaina, PVM)..."
             aria-label="Ieškoti praktinių užduočių">
           <div id="search-results" class="search-results" style="display: none;"></div>
+        </div>
+
+        <!-- Quick Access Panel -->
+        <div class="quick-access-panel">
+          <h2>⚡ Greita prieiga</h2>
+          <div class="quick-access-grid">
+            <!-- Recently Used -->
+            <div class="recently-used-section">
+              <h3>🕐 Neseniai naudoti</h3>
+              <div id="recently-used-container">
+                <p class="empty-state">Dar nenaudojote jokių promptų. Pradėkite kopijuodami!</p>
+              </div>
+            </div>
+            
+            <!-- Favorites -->
+            <div class="favorites-section">
+              <h3>⭐ Mėgstami</h3>
+              <div id="favorites-container">
+                <p class="empty-state">Dar neturite mėgstamų promptų. Spustelėkite ☆ norėdami pridėti!</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="prompts-container">
@@ -2242,8 +2272,35 @@ IŠVESTIES REIKALAVIMAS: Pradėk nuo pilno plano, tada vykdyk žingsnis po žing
     </div>
   </footer>
 
+  <!-- Mobile bottom bar -->
+  <div class="mobile-bottom-bar">
+    <button id="mobile-search-btn" class="mobile-bottom-bar__btn">
+      <span>🔍</span> Ieškoti
+    </button>
+    <button id="mobile-sections-btn" class="mobile-bottom-bar__btn">
+      <span>📂</span> Skyriai
+    </button>
+  </div>
+
+  <!-- Mobile search modal -->
+  <div id="mobile-search-modal" class="mobile-search-modal">
+    <div class="mobile-search-modal__content">
+      <input 
+        type="search" 
+        id="mobile-search-input" 
+        class="search-input" 
+        placeholder="🔍 Ieškokite..."
+        aria-label="Mobili paieška">
+      <button class="mobile-search-close" onclick="closeMobileSearch()">Uždaryti</button>
+    </div>
+  </div>
+
+  <!-- Keyboard hint -->
+  <div class="keyboard-hint">
+    Spauskite <kbd>/</kbd> paieškai
+  </div>
   
-  <!-- External JavaScript -->
-  <script src="assets/js/app.js" defer></script>
+  <!-- External JavaScript (Enhanced P2 version) -->
+  <script src="assets/js/app-enhanced.js" defer></script>
 </body>
 </html>

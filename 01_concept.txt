@@ -1,0 +1,54 @@
+💡 TOP 20 Practical Tasks for Daily Work with AI
+🔹 Sales & Customer Support
+
+Email to Client: “Write a clear, friendly email to a client interested in [product]. Explain key benefits and suggest suitable alternatives.”
+
+Offer Rewrite: “Rewrite this offer to make it shorter, more professional, and clearer: [paste text].”
+
+Price Calculation: “Calculate the final price with a 15% markup and 21% VAT if the purchase cost is [x EUR].”
+
+FAQ Creation: “Create a list of 5 frequently asked questions (FAQs) and answers about [product category].”
+
+Competitor Conversion Message: “Prepare a short message for a client considering switching from competitor [X] to our solution.”
+
+🔹 Procurement / Supply
+
+Supplier Comparison: “Create a supplier comparison table by price, delivery time, and reliability using this data: [paste data].”
+
+Delay Notice Email: “Write a formal email to a supplier regarding an order delay and request an updated delivery date.”
+
+Import Price Calculator: “Create a calculator for imported goods (item + shipping + VAT + customs = final price).”
+
+🔹 Logistics / Warehouse
+
+Daily Task Plan: “Prepare a simple daily task plan for the warehouse team by priority (order picking, receiving, inventory).”
+
+Safety Summary: “Summarize key safety instructions for a new warehouse employee (short version).”
+
+🔹 E-Commerce / Content Management
+
+SEO Product Description: “Write a 120-word SEO-optimized description for [product] including key search terms.”
+
+Category Titles: “Generate 10 product category titles with clear, human-friendly descriptions.”
+
+E-Shop Text Rewrite: “Rewrite this product description to make it more appealing for the online store: [paste text].”
+
+🔹 Marketing / Communication
+
+Newsletter Copy: “Write newsletter text announcing a promotion: -20% on all measuring devices until Sunday.”
+
+Facebook Post Ideas: “Generate 5 Facebook post ideas about new Arduino products, each with a clear call to action.”
+
+Catalog Intro: “Write a 120-word professional and clear introduction for the product catalog.”
+
+🔹 IT / Systems Maintenance
+
+ERP Error Help: “Explain in simple terms how a user can fix this ERP login error: [error message].”
+
+Data Import Guide: “Create a step-by-step guide for importing product data from CSV into our system.”
+
+🔹 Finance / Administration
+
+VAT Explanation: “Write a clear explanation for a client on how VAT is calculated and what rules apply for buyers from Latvia.”
+
+Monthly Report: “Generate a short management report showing monthly sales changes using this data: [paste CSV].”
