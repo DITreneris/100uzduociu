@@ -480,11 +480,13 @@
     searchBtn: null,
     sectionsBtn: null,
     searchModal: null,
+    closeBtn: null,
 
     init() {
       this.searchBtn = document.getElementById('mobile-search-btn');
       this.sectionsBtn = document.getElementById('mobile-sections-btn');
       this.searchModal = document.getElementById('mobile-search-modal');
+      this.closeBtn = document.querySelector('.mobile-search-close');
 
       if (this.searchBtn) {
         this.searchBtn.addEventListener('click', () => this.openSearchModal());
@@ -502,11 +504,16 @@
           }
         });
       }
+
+      if (this.closeBtn) {
+        this.closeBtn.addEventListener('click', () => this.closeSearchModal());
+      }
     },
 
     openSearchModal() {
       if (!this.searchModal) return;
       this.searchModal.classList.add('active');
+      this.searchModal.setAttribute('aria-hidden', 'false');
       
       const input = document.getElementById('mobile-search-input');
       if (input) {
@@ -517,6 +524,10 @@
     closeSearchModal() {
       if (!this.searchModal) return;
       this.searchModal.classList.remove('active');
+      this.searchModal.setAttribute('aria-hidden', 'true');
+      if (this.searchBtn) {
+        this.searchBtn.focus();
+      }
     },
 
     toggleSections() {
@@ -525,11 +536,6 @@
         toggle.click();
       }
     }
-  };
-
-  // Global function for inline onclick
-  window.closeMobileSearch = function() {
-    MobileUI.closeSearchModal();
   };
 
   // ============================================
