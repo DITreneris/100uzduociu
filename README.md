@@ -39,7 +39,6 @@ Praktinių promptų rinkinys, skirtas kasdieniam darbui su AI įrankiais (ChatGP
 ## Kalbos
 
 - 🇱🇹 Lietuvių: `index.html`
-- 🇬🇧 English: `index_en.html`
 
 ## Naudojimas
 
@@ -59,11 +58,16 @@ Praktinių promptų rinkinys, skirtas kasdieniam darbui su AI įrankiais (ChatGP
 ## GitHub Pages
 
 1. Sukurkite GitHub repository
-2. Įkelkite failus
-3. Settings → Pages → pasirinkite branch ir folder
-4. Svetainė bus prieinama per `https://[username].github.io/[repository-name]`
+2. Įkelkite visą projektą su `assets/`, `scripts/`, `package.json` ir `.github/workflows/deploy.yml`
+3. Settings → Pages → Source: GitHub Actions
+4. Push į `main` arba `master` paleis patikras ir publikavimą
+5. Svetainė bus prieinama per `https://[username].github.io/[repository-name]`
 
 Daugiau informacijos: [GITHUB_SETUP.md](GITHUB_SETUP.md)
+
+## Versijų istorija
+
+Pagrindiniai pakeitimai dokumentuojami [CHANGELOG.md](CHANGELOG.md).
 
 ## Technologijos
 
@@ -81,7 +85,11 @@ Daugiau informacijos: [GITHUB_SETUP.md](GITHUB_SETUP.md)
 ```
 .
 ├── index.html          # Pagrindinė svetainė (LT)
-├── index_en.html       # English version
+├── assets/             # CSS, JS ir duomenų failai
+├── scripts/            # Projekto patikros skriptai
+├── .github/workflows/  # GitHub Pages publikavimo automatizacija
+├── package.json        # Lokalaus paleidimo ir patikrų komandos
+├── package-lock.json   # Užrakintos npm priklausomybės
 ├── README.md           # Projekto aprašymas
 ├── GITHUB_SETUP.md     # GitHub publikavimo gidas
 ├── QUICK_START.md      # Greitas pradžios gidas

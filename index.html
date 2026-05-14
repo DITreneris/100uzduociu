@@ -208,7 +208,7 @@
             <div class="dept__header">
               <div class="dept__icon" aria-hidden="true">💼</div>
               <h2 class="dept__title">Verslas</h2>
-              <span class="dept__badge">38 užduočių</span>
+              <span class="dept__badge">23 užduotys</span>
             </div>
             <div style="margin-bottom: var(--space-6); padding: var(--space-4); background: var(--color-bg-alt); border-radius: var(--radius);">
               <h3 style="font-size: var(--font-size-2); margin: 0 0 var(--space-3) 0; color: var(--color-text);">Pardavimai ir klientų aptarnavimas</h3>
@@ -523,7 +523,7 @@
             <div class="dept__header">
               <div class="dept__icon" aria-hidden="true">🛒</div>
               <h2 class="dept__title">E-komercija</h2>
-              <span class="dept__badge">13 užduočių</span>
+              <span class="dept__badge">12 užduočių</span>
             </div>
             <div class="prompts">
               <!-- Prompt 11 -->
@@ -679,7 +679,7 @@
             <div class="dept__header">
               <div class="dept__icon" aria-hidden="true">🎨</div>
               <h2 class="dept__title">Dizainas</h2>
-              <span class="dept__badge">8 užduočių</span>
+              <span class="dept__badge">8 užduotys</span>
             </div>
             <div class="prompts">
               <!-- Design Task 1 -->
@@ -777,7 +777,7 @@
             <div class="dept__header">
               <div class="dept__icon" aria-hidden="true">📊</div>
               <h2 class="dept__title">Duomenų analizė</h2>
-              <span class="dept__badge">8 užduočių</span>
+              <span class="dept__badge">8 užduotys</span>
             </div>
             <div class="prompts">
               <!-- Analytics Task 1 -->
@@ -875,7 +875,7 @@
             <div class="dept__header">
               <div class="dept__icon" aria-hidden="true">📢</div>
               <h2 class="dept__title">Rinkodara</h2>
-              <span class="dept__badge">7 užduočių</span>
+              <span class="dept__badge">24 užduotys</span>
             </div>
             <div class="prompts">
               <!-- Prompt 14 -->
@@ -1206,7 +1206,7 @@
             <div class="dept__header">
               <div class="dept__icon" aria-hidden="true" style="background: #06b6d4;">👥</div>
               <h2 class="dept__title">Personalo skyrius</h2>
-              <span class="dept__badge">8 užduočių</span>
+              <span class="dept__badge">9 užduotys</span>
             </div>
             <div class="prompts">
               <!-- Prompt 21 -->
@@ -1527,7 +1527,7 @@
               <div class="dept__icon" aria-hidden="true" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">⚡</div>
               <div>
                 <h2 class="dept__title">Pažengusiems ⚡</h2>
-                <span class="dept__badge">18 užduočių</span>
+                <span class="dept__badge">7 užduotys</span>
                 <p style="color: var(--color-muted); margin: var(--space-2) 0 0 0; font-size: var(--font-size-sm);">Kompleksiškos, struktūruotos užklausos su Role + Task + Format + Tone + Style metodika</p>
               </div>
             </div>
@@ -2178,23 +2178,23 @@ IŠVESTIES REIKALAVIMAS: Pradėk nuo pilno plano, tada vykdyk žingsnis po žing
             <h3 class="card__title">Geriausia praktinių užduočių praktika</h3>
             <!-- replace: {{RESOURCE1_TEXT}} -->
             <p class="card__text">Sužinokite, kaip kurti efektyvias praktines užduotis ir gauti geresnių rezultatų iš tokių DI įrankių kaip ChatGPT.</p>
-            <a class="button" href="#">Sužinoti daugiau</a>
+            <a class="button" href="#guide">Sužinoti daugiau</a>
           </article>
 
           <article class="card">
             <!-- replace: {{RESOURCE2_TITLE}} -->
-            <h3 class="card__title">Šablonų biblioteka</h3>
+            <h3 class="card__title">Promptų šablonų biblioteka</h3>
             <!-- replace: {{RESOURCE2_TEXT}} -->
-            <p class="card__text">Atsisiųskite parengtus el. laiškų ir dokumentų šablonus dažniausioms verslo situacijoms.</p>
-            <a class="button" href="#">Atsisiųsti</a>
+            <p class="card__text">Peržiūrėkite parengtus promptų šablonus dažniausioms verslo situacijoms tiesiog šiame puslapyje.</p>
+            <a class="button" href="#prompts-container">Peržiūrėti šablonus</a>
           </article>
 
           <article class="card">
             <!-- replace: {{RESOURCE3_TITLE}} -->
-            <h3 class="card__title">Vaizdo pamokos</h3>
+            <h3 class="card__title">Pasiūlykite naują temą</h3>
             <!-- replace: {{RESOURCE3_TEXT}} -->
-            <p class="card__text">Peržiūrėkite žingsnis po žingsnio vaizdo gidus, kaip efektyviai naudoti DI įrankius jūsų skyriuje.</p>
-            <a class="button" href="#">Žiūrėti dabar</a>
+            <p class="card__text">Neradote reikalingo scenarijaus? Parašykite pasiūlymą, kokių praktinių DI užduočių turėtume pridėti.</p>
+            <a class="button" href="#contact">Pasiūlyti temą</a>
           </article>
         </div>
       </div>
@@ -2241,6 +2241,35 @@ IŠVESTIES REIKALAVIMAS: Pradėk nuo pilno plano, tada vykdyk žingsnis po žing
       </form>
     </div>
   </footer>
+
+  <!-- Mobile bottom bar -->
+  <nav class="mobile-bottom-bar" aria-label="Greiti mobilūs veiksmai">
+    <button id="mobile-search-btn" class="mobile-bottom-bar__btn" type="button">
+      <span aria-hidden="true">🔍</span> Ieškoti
+    </button>
+    <button id="mobile-sections-btn" class="mobile-bottom-bar__btn" type="button">
+      <span aria-hidden="true">📂</span> Skyriai
+    </button>
+  </nav>
+
+  <!-- Mobile search modal -->
+  <div id="mobile-search-modal" class="mobile-search-modal" aria-hidden="true">
+    <div class="mobile-search-modal__content" role="dialog" aria-modal="true" aria-labelledby="mobile-search-title">
+      <h2 id="mobile-search-title" class="sr-only">Mobili paieška</h2>
+      <input 
+        type="search" 
+        id="mobile-search-input" 
+        class="search-input" 
+        placeholder="🔍 Ieškokite..."
+        aria-label="Mobili paieška">
+      <button class="mobile-search-close" type="button">Uždaryti</button>
+    </div>
+  </div>
+
+  <!-- Keyboard hint -->
+  <div class="keyboard-hint" aria-hidden="true">
+    Spauskite <kbd>/</kbd> paieškai
+  </div>
 
   
   <!-- External JavaScript -->

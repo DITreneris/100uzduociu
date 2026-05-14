@@ -16,9 +16,13 @@
 
 1. Eikite į sukurtą repository
 2. Spustelėkite "uploading an existing file"
-3. Įkelkite failus:
+3. Įkelkite visą projekto turinį, įskaitant:
    - `index.html`
-   - `index_en.html`
+   - `assets/`
+   - `scripts/`
+   - `.github/workflows/deploy.yml`
+   - `package.json`
+   - `package-lock.json`
    - `README.md`
    - `LICENSE`
 4. Įveskite commit žinutę ir spustelėkite "Commit changes"
@@ -38,9 +42,9 @@ git push -u origin main
 ### 3. Įjunkite GitHub Pages
 
 1. Repository → Settings → Pages
-2. Source: Deploy from a branch
-3. Branch: `main`, Folder: `/ (root)`
-4. Spustelėkite "Save"
+2. Source: GitHub Actions
+3. Įsitikinkite, kad `.github/workflows/deploy.yml` yra repository
+4. Kiekvienas push į `main` arba `master` paleis patikras ir publikavimą
 
 ### 4. Svetainė bus prieinama per
 
@@ -67,7 +71,11 @@ git push
 ```
 .
 ├── index.html          # Pagrindinė svetainė (LT)
-├── index_en.html       # English version
+├── assets/             # CSS, JS ir duomenų failai
+├── scripts/            # Projekto patikros skriptai
+├── .github/workflows/  # GitHub Pages publikavimo automatizacija
+├── package.json        # Lokalaus paleidimo ir patikrų komandos
+├── package-lock.json   # Užrakintos npm priklausomybės
 ├── README.md           # Projekto aprašymas
 ├── LICENSE             # MIT licencija
 └── .gitignore          # Git ignoravimo failas
@@ -75,10 +83,13 @@ git push
 
 ## Failai, kurių NEREIKIA įkelti
 
-Šie failai skirti tik kūrimui ir neturėtų būti įkelti į GitHub:
+Šie failai nėra būtini publikavimui, jei norite įkelti tik švarią statinę svetainę:
 
 - `index_old.html` - sena versija
-- `*.js` failai (build/migrate skriptai)
-- `migrated-prompts.html`
-- `*_IVERTINIMAS.md` failai
-- `01_concept.txt`
+- `index_02.html` - tarpinė versija
+- `index-enhanced.html` - alternatyvi sugeneruota versija
+- `migrated-prompts.html` - migracijos rezultatas
+- `*_IVERTINIMAS.md` failai - vidiniai vertinimai
+- `01_concept.txt` - koncepcijos pastabos
+
+Nepamirškite įkelti `assets/`, nes ten yra pagrindiniai CSS ir JavaScript failai.

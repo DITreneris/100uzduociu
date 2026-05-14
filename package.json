@@ -7,7 +7,9 @@
     "dev": "npx serve . -l 3000 --cors",
     "start": "npx serve . -l 3000 --cors",
     "lint": "eslint assets/js/*.js",
-    "format": "prettier --write assets/**/*.{js,css}"
+    "format": "prettier --write assets/**/*.{js,css}",
+    "test": "node scripts/verify-content.cjs",
+    "build": "npm run lint && npm test"
   },
   "keywords": [
     "prompts",
